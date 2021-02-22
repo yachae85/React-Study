@@ -1,0 +1,25 @@
+{
+  "name": "ch03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-3-1": "./node_modules/.bin/babel 3-1/jsx/script.jsx -o 3-1/js/script.js -w",
+    "build-3-2": "./node_modules/.bin/babel 3-2/jsx/script.jsx -o 3-2/js/script.js -w",
+    "build-3-3": "./node_modules/.bin/babel 3-3/jsx/script.jsx -o 3-3/js/script.js -w",
+    "build-3-4": "./node_modules/.bin/babel 3-4/jsx/script.jsx -o 3-4/js/script.js -w",
+    "build": "npm run build-3-1 & npm run build-3-2 & npm run build-3-3 & npm run build-3-4"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "author": "uk",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
