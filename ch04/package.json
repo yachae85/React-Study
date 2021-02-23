@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-script": "./node_modules/.bin/babel clock/jsx/script.jsx -o clock/js/script.js -w",
     "build-clock": "./node_modules/.bin/babel clock/jsx/clock.jsx -o clock/js/clock.js -w",
-    "build": "npm run build-script & npm run build-clock"
+    "build-upgrade-clock": "./node_modules/.bin/babel clock-upgrade/jsx/clock.jsx -o clock-upgrade/js/clock.js -w",
+    "build-upgrade-script": "./node_modules/.bin/babel clock-upgrade/jsx/script.jsx -o clock-upgrade/js/script.js -w",
+    "build-upgrade-analog": "./node_modules/.bin/babel clock-upgrade/jsx/analog.jsx -o clock-upgrade/js/analog.js -w",
+    "build-upgrade-digital": "./node_modules/.bin/babel clock-upgrade/jsx/digital.jsx -o clock-upgrade/js/digital.js -w",
+    "build": "npm run build-script & npm run build-clock & npm run build-upgrade-clock & npm run build-upgrade-script & npm run build-upgrade-analog & npm run build-upgrade-digital"
   },
   "babel": {
     "presets": [
