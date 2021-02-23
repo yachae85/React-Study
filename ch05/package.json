@@ -1,0 +1,28 @@
+{
+  "name": "ch03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-logger-logger": "./node_modules/.bin/babel logger/jsx/logger.jsx -o logger/js/logger.js -w",
+    "build-logger-content": "./node_modules/.bin/babel logger/jsx/content.jsx -o logger/js/content.js -w",
+    "build-logger-script": "./node_modules/.bin/babel logger/jsx/script.jsx -o logger/js/script.js -w",
+    "build-users-users": "./node_modules/.bin/babel users/jsx/users.jsx -o users/js/users.js -w",
+    "build-users-script": "./node_modules/.bin/babel users/jsx/script.jsx -o users/js/script.js -w",
+    "build-note-script": "./node_modules/.bin/babel note/jsx/script.jsx -o note/js/script.js -w",
+    "build-note-note": "./node_modules/.bin/babel note/jsx/note.jsx -o note/js/note.js -w",
+    "build": "npm run build-logger-logger & npm run build-logger-content & npm run build-logger-script & npm run build-users-users & npm run build-users-script & npm run build-note-note & npm run build-note-script"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "author": "uk",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
