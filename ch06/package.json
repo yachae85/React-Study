@@ -10,7 +10,10 @@
     "b-bc-m": "./node_modules/.bin/babel bubble-capture/jsx/mouse.jsx -o bubble-capture/js/mouse.js -w",
     "b-click-c": "./node_modules/.bin/babel click/jsx/content.jsx -o click/js/content.js -w",
     "b-radio-r": "./node_modules/.bin/babel radio/jsx/radio.jsx -o radio/js/radio.js -w",
-    "build": "npm run b-save-script & npm run b-save-sb & npm rum b-bc-m & npm run b-click-c & npm run b-radio-r"
+    "b-slider-b": "./node_modules/.bin/babel slider/jsx/slider-buttons.jsx -o slider/js/slider-buttons.js -w",
+    "b-slider-v": "./node_modules/.bin/babel slider/jsx/slider-value.jsx -o slider/js/slider-value.js -w",
+    "b-slider-s": "./node_modules/.bin/babel slider/jsx/script.jsx -o slider/js/script.js -w",
+    "build": "npm run b-save-script & npm run b-save-sb & npm rum b-bc-m & npm run b-click-c & npm run b-radio-r & npm run b-slider-b & npm run b-slider-v & npm run b-slider-s"
   },
   "babel": {
     "presets": [
