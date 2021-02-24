@@ -9,7 +9,8 @@
     "b-save-sb": "./node_modules/.bin/babel save/jsx/savebutton.jsx -o save/js/savebutton.js -w",
     "b-bc-m": "./node_modules/.bin/babel bubble-capture/jsx/mouse.jsx -o bubble-capture/js/mouse.js -w",
     "b-click-c": "./node_modules/.bin/babel click/jsx/content.jsx -o click/js/content.js -w",
-    "build": "npm run b-save-script & npm run b-save-sb & npm rum b-bc-m & npm run b-click-c"
+    "b-radio-r": "./node_modules/.bin/babel radio/jsx/radio.jsx -o radio/js/radio.js -w",
+    "build": "npm run b-save-script & npm run b-save-sb & npm rum b-bc-m & npm run b-click-c & npm run b-radio-r"
   },
   "babel": {
     "presets": [
