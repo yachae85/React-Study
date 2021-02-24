@@ -1,0 +1,23 @@
+{
+  "name": "ch03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b-save-script": "./node_modules/.bin/babel save/jsx/script.jsx -o save/js/script.js -w",
+    "b-save-sb": "./node_modules/.bin/babel save/jsx/savebutton.jsx -o save/js/savebutton.js -w",
+    "build": "npm run b-save-script & npm run b-save-sb"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "author": "uk",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
