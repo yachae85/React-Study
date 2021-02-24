@@ -8,7 +8,8 @@
     "b-save-script": "./node_modules/.bin/babel save/jsx/script.jsx -o save/js/script.js -w",
     "b-save-sb": "./node_modules/.bin/babel save/jsx/savebutton.jsx -o save/js/savebutton.js -w",
     "b-bc-m": "./node_modules/.bin/babel bubble-capture/jsx/mouse.jsx -o bubble-capture/js/mouse.js -w",
-    "build": "npm run b-save-script & npm run b-save-sb & npm rum b-bc-m"
+    "b-click-c": "./node_modules/.bin/babel click/jsx/content.jsx -o click/js/content.js -w",
+    "build": "npm run b-save-script & npm run b-save-sb & npm rum b-bc-m & npm run b-click-c"
   },
   "babel": {
     "presets": [
