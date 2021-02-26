@@ -1,0 +1,22 @@
+{
+  "name": "ch03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b-radio-r": "./node_modules/.bin/babel radio/jsx/radio.jsx -o radio/js/radio.js -w",
+    "build": "npm run b-radio-r"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "author": "uk",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
