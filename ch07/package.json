@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "b-radio-r": "./node_modules/.bin/babel radio/jsx/radio.jsx -o radio/js/radio.js -w",
-    "build": "npm run b-radio-r"
+    "b-account-a": "./node_modules/.bin/babel account/jsx/account.jsx -o account/js/account.js -w",
+    "b-email-e" : "./node_modules/.bin/babel email/jsx/email.jsx -o email/js/email.js -w",
+    "build": "npm run b-radio-r & npm run b-account-a & npm run b-email-e"
   },
   "babel": {
     "presets": [
