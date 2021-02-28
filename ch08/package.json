@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "b-button-b": "./node_modules/.bin/babel button/jsx/button.jsx -o button/js/button.js -w",
-    "build": "npm run b-button-b"
+    "b-children-c": "./node_modules/.bin/babel children/jsx/content.jsx -o children/js/content.js -w",
+    "build": "npm run b-button-b & npm run b-children-c"
   },
   "babel": {
     "presets": [
