@@ -1,0 +1,22 @@
+{
+  "name": "ch03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b-button-b": "./node_modules/.bin/babel button/jsx/button.jsx -o button/js/button.js -w",
+    "build": "npm run b-button-b"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "author": "uk",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
