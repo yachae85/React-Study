@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "b-button-b": "./node_modules/.bin/babel button/jsx/button.jsx -o button/js/button.js -w",
     "b-children-c": "./node_modules/.bin/babel children/jsx/content.jsx -o children/js/content.js -w",
-    "build": "npm run b-button-b & npm run b-children-c"
+    "b-ho-c": "./node_modules/.bin/babel hi-order/jsx/content.jsx -o hi-order/js/content.js -w",
+    "b-ho-e": "./node_modules/.bin/babel hi-order/jsx/elements.jsx -o hi-order/js/elements.js -w",
+    "b-ho-lw": "./node_modules/.bin/babel hi-order/jsx/load-website.jsx -o hi-order/js/load-website.js -w",
+    "b-ho-s": "./node_modules/.bin/babel hi-order/jsx/script.jsx -o hi-order/js/script.js -w",
+    "build": "npm run b-button-b & npm run b-children-c & npm run b-ho-c & npm run b-ho-e & npm run b-ho-lw &npm run b-ho-s"
   },
   "babel": {
     "presets": [
